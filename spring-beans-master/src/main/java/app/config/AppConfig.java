@@ -11,11 +11,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "app")
 public class AppConfig {
 
-    @Bean
-    public Dog getDog() {
-        return new Dog();
-    }
 
-    @Bean("timer")
-    public Timer getTimer() { return new Timer(); }
 }
